@@ -1,0 +1,285 @@
+/* root */
+:root {
+	--ss-yolk0: #ffffff;
+	--ss-yolk: #4d0000;
+	--ss-yolk2: #ffffff;
+	
+	--ss-brown: #000000;
+	--ss-blue00: #ff0000;
+	--ss-blue0: #ff0000;
+	--ss-blue1: #ff0000;
+	--ss-blue2: #000000;
+	--ss-blue3: #6e0000;
+	--ss-blue4: #000000;
+	--ss-blue5: #000000;
+	--ss-blue6: #750000;
+	--ss-blue7: #000000;
+	--ss-blue8: #000000;
+	--ss-green0: #ff0000;
+	--ss-green1: #000000;
+	--ss-green2: #000000;
+	
+	--ss-vip-blue: #000000;
+	
+	/* Redsign colors */
+	--ss-lightoverlay: linear-gradient(var(--ss-blue00), var(--ss-blue3));
+	
+	--ss-popupbackground: linear-gradient(#920101,#2a0000);
+	--ss-blueblend1: linear-gradient(#000000, #ff0000);
+	
+	--ss-scrollmask2: linear-gradient(rgba(56, 158, 192, 0), #c03838);
+	--ss-fieldbg: linear-gradient(#db9191, #ffffff, #ffffff, #ffffff, #ffffff);
+	
+	--ss-team-blue-light: rgb(6 193 255);
+	--ss-team-blue-light-trans: rgb(28 54 62 / 80%);
+	--ss-team-blue-dark: rgb(32 92 116);
+	--ss-team-blue-dark-trans: rgb(4 30 65 / 80%);
+	--ss-team-red-light: rgb(237 51 36);
+	--ss-team-red-light-trans: rgb(111 24 17 / 80%);
+	--ss-team-red-dark: rgb(68 13 10);
+	--ss-team-red-dark-trans: rgb(35 6 4 / 80%);
+	
+	/* shadows */
+	--ss-box-shadow-1:  .16em .16em 0 rgb(189 11 11 / 50%);
+	--ss-box-shadow-2: .15em .15em 0 rgb(189 11 11 / 90%);
+	--ss-box-shadow-3: .15em .15em 0 rgb(217 17 17 / 90%);
+	--ss-text-shadow-1: .1em .1em 0 rgb(189 11 11 / 80%);
+	
+	--ss-blueshadow: #710a0a87;
+}
+
+/* shadows */
+.bevel_red {
+    box-shadow:
+        var(--ss-box-shadow-1),
+        var(--ss-btn-dark-bevel) rgb(0 0 0),
+        var(--ss-btn-light-bevel) #3a0606;
+    background: #850000 !important;
+}
+
+.bevel_blue_light {
+	box-shadow:
+	var(--ss-box-shadow-1),
+	var(--ss-btn-dark-bevel) rgb(230 0 0),
+	var(--ss-btn-light-bevel) rgb(255 103 103);
+}
+
+.bevel_blue {
+	box-shadow:
+	var(--ss-box-shadow-1),
+	var(--ss-btn-dark-bevel) rgb(141 8 8),
+	var(--ss-btn-light-bevel) rgb(230 0 0) !important;
+}
+
+.bevel_yolk {
+	box-shadow:
+		var(--ss-box-shadow-1),
+		var(--ss-btn-dark-bevel) red,
+		var(--ss-btn-light-bevel) maroon;
+}
+
+.bevel_green {
+    box-shadow: var(--ss-box-shadow-1),
+	var(--ss-btn-dark-bevel) rgb(140 14 14),
+	var(--ss-btn-light-bevel) var(--ss-green0) !important;
+}
+
+.common-box-shadow {
+	box-shadow: none;
+}
+
+/* bg */
+#ss_background {
+	background: url('https://i.ibb.co/F84GM8C/bg.png') center;
+	background-size: cover !important;
+}
+
+/* main menu */
+/* username */
+.ss_field {
+    box-shadow: inset -0.3em .3em .03em rgb(255 255 255), 0.2em 0.2em .01em var(--ss-blue3) !important;
+}
+
+/* eggs */
+.egg_icon {
+	visibility: hidden;
+}
+
+.account_eggs div {
+	background: url('https://i.ibb.co/phfrGRZ/logo.png') center no-repeat !important;
+	background-size: contain !important;
+	margin-right: 3px;
+}
+
+/* menu buttons */
+.main-menu-button svg path:nth-child(1) {
+    fill: black !important;
+}
+
+/* chicken winner */
+.chw-circular-timer-container-shadow {
+    background: rgb(189 11 11 / 50%);
+}
+
+/* weapon info */
+.text_blue8 {
+	color: black !important;
+	background: #ff000052;
+}
+
+/* gun descriptions */
+.text_blue3 {
+	color: red !important;
+}
+
+/* weapon icons */
+.weapon_img {
+    background: linear-gradient(45deg, #830101, #000000) !important;
+    border-color: black;
+}
+
+/* game descrption */
+#gameDescription {
+  background: maroon;
+}
+
+#gameDescription h1 {
+	color: red;
+}
+
+#gameDescription h2 {
+	color: red;
+}
+
+/* private game menu */
+.option-box {
+    box-shadow: 0.26em 0.26em 0 rgb(189 11 11 / 50%);
+}
+
+/* stats */
+.stat-wrapper .stat:nth-child(even)>div {
+    background-color: #510000;
+}
+
+/* inv stuff */
+#item_mask {
+	display: none;
+}
+
+/* shop: unvaulted area */
+#limited-un-vaulted h4 {
+    color: white !important;
+}
+
+/* tips */
+.tips {
+	display: none;
+}
+
+.spinner-tips:after {
+	content: 'Theme by Jayvan. Improved by web.';
+    background: var(--ss-white);
+    border-radius: 10em;
+	color: var(--ss-blue4);
+	font-size: 1.95vh;
+	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+	height: 1.25em;
+	margin: 1.5em auto;
+	padding: 2em 2em;
+	position: relative;
+}
+
+/* game */
+/* player list */
+.playerSlot-player-is-me {
+	background: url('https://i.ibb.co/F84GM8C/bg.png') center;
+	background-size: cover !important;
+}
+
+.playerSlot-them {
+	color: #fff;
+}
+
+/* player icons */
+.playerSlot--icons {
+	color: red;
+}
+
+/* icons | vips */
+.vip-egg {
+	color: red;
+}
+
+.fa-twitch {
+	color: red;
+}
+
+/* killstreak */
+#best_streak_container h1 {
+	background-image: url(https://i.ibb.co/phfrGRZ/logo.png);
+	padding-left: 1.5em;
+}
+
+/* map info */
+#inGameUI {
+    padding: 1em;
+    background-color: rgb(111 12 12 / 50%);
+    border: var(--ss-common-border-width) solid var(--ss-blue5);
+}
+
+/* map info | titles */
+#inGameUI h5 {
+    color: #fb0000 !important;
+}
+
+/* chat */
+.is-paused .chat-wrapper {
+	background: rgb(111 12 12 / 50%);
+	border: var(--ss-common-border-width) solid var(--ss-blue5);
+}
+
+#chatIn {
+	color: red !important;
+}
+
+/* reticle / crosshair */
+#reticleDot {
+	background: red;
+	display: flex !important;
+}
+
+.crosshair.normal {
+	left: calc(50% - 0.15em);
+	background: linear-gradient(darkred, red);
+	width: 0.3em;
+}
+
+/* crosshair | shotgun */
+.shotReticle.fill.normal {
+	border-color: darkred;
+	border-left: solid transparent !important;
+    border-right: solid transparent !important;
+    border-width: 0.2em;
+	/* animation: border 2s infinite; */
+}
+
+/* hp */
+#healthContainer {
+	background: none;
+	display: inline-block !important;
+}
+
+.healthYolk {
+    fill: #8f0000;
+}
+
+/* kill feed */
+#killTicker {
+	display: block !important;
+}
+
+/* shield */
+#hardBoiledShieldFill {
+	content: url('https://i.ibb.co/26C137b/shield.png');
+}
